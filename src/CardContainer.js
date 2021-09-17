@@ -10,7 +10,7 @@ export default function CardContainer(){
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${API}&count=10`)
     .then(r => r.json())
     .then(d => setState(d))
-  })
+  }, [])
  
 
   return (

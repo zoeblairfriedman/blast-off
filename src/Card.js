@@ -1,9 +1,9 @@
-export default function Card(){
+export default function Card(props){
 
 
   return (
   <div>
-    <h2>card here</h2>
+    <img src={props.asset.url}/>
   </div>
   )
 }
