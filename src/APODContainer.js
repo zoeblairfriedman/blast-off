@@ -17,9 +17,9 @@ export default function CardContainer(){
 
   return (
   <Container>
-  <Row xs={1} md={2}>
-    {state.map((asset, i) => <APOD key={i} asset={asset}/>)}
-  </Row>
+    <Row xs={1} md={2}>
+      {state.map((asset, i) => <APOD key={i} asset={asset}/>)}
+    </Row>
   </Container>
   )
 }
