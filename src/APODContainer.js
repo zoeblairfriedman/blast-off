@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Card from './Card'
+import APOD from './APOD'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 export default function CardContainer(){
 
@@ -14,8 +16,10 @@ export default function CardContainer(){
  
 
   return (
-  <div>
-    {state.map(asset => <Card asset={asset}/>)}
-  </div>
+  <Container>
+  <Row xs={1} md={2}>
+    {state.map((asset, i) => <APOD key={i} asset={asset}/>)}
+  </Row>
+  </Container>
   )
 }
