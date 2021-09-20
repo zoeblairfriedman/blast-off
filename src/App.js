@@ -1,13 +1,15 @@
 
-import logo from './logo.svg';
 import './App.css';
-import APODContainer from './APODContainer';
+import RandomContainer from './RandomContainer';
+import Banner from './Banner'
+import ChooseDate from './ChooseDate'
 
 function App() {
   return (
     <div>
-      <h1>Blast Off!</h1>
-      <APODContainer/>
+      <Banner/>
+      <ChooseDate/>
+      <RandomContainer/>
     </div>
    
   );

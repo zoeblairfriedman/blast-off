@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import APOD from './APOD'
+import Random from './Random'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 
@@ -18,7 +18,7 @@ export default function CardContainer(){
   return (
   <Container>
     <Row className="justify-content-center">
-      {state.map((asset, i) => <APOD key={i} asset={asset}/>)}
+      {state.map((asset, i) => <Random key={i} asset={asset}/>)}
     </Row>
   </Container>
   )

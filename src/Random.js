@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'
-import { useState } from 'react';
+import LikeButton from './LikeButton'
+
 
 export default function APOD(props){
 
@@ -11,26 +11,17 @@ if (props.asset.media_type !== "image"){
   visual = <Card.Img variant="top" src={props.asset.url} />
 }
 
-const [like, toggleLike] = useState(false)
-const handleClick = () => {
- if (like === true){
-    toggleLike(false)
- } else {
-    toggleLike(true)
- }
-}
-
   return (
 
   <Card className="p-3 m-2" style={{ width: '30rem' }}>
     {visual}
   <Card.Body>
-    <Card.Title>{props.asset.title}</Card.Title>
+    <h3>{props.asset.title}</h3>
     <Card.Text>
-      <h5>{props.asset.date}</h5>
+      <h4>{props.asset.date}</h4>
       <p>{props.asset.explanation}</p>
     </Card.Text>
-    <Button onClick={() => handleClick()}variant="primary">Like</Button>
+    <LikeButton asset={props.asset}/>
   </Card.Body>
 </Card>
 
