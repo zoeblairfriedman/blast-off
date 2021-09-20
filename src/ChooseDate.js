@@ -12,7 +12,7 @@ export default function ChooseDate(){
   function handleSubmit(newDate){
     setDate(newDate)
   }
-  
+
 
 
   return (
@@ -20,7 +20,7 @@ export default function ChooseDate(){
       <Row>
         <DateForm date={date} onSubmit={handleSubmit}/>
       </Row>
-      <DateModal/>
+      { date ? <DateModal date={date}/> : null}
   </Container>
   )
 }
