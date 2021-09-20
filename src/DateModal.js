@@ -8,9 +8,7 @@ export default function DateModal(props){
 
   const handleClose = () => {
     setShow(false)
-    // set up something so that the form works again
   };
-
 
   const [apod, setApod] = useState([])
 
@@ -21,6 +19,14 @@ export default function DateModal(props){
     .then(d => setApod(d))
   }, [])
   
+  let visual;
+  if (apod.code === 400) {
+    visual = <img className="w-100" src='./tinyrocket.png'></img>
+  } else if (apod.media_type !== "image"){
+    visual = <iframe src={apod.url} className="w-100" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  } else {
+    visual = <img className="w-100" src={apod.url}></img>
+  }
 
 
   return (
@@ -33,10 +39,10 @@ export default function DateModal(props){
       keyboard={false}
     >
       <Modal.Header closeButton>
-        <Modal.Title>{apod.title}</Modal.Title>
+        <Modal.Title>{apod.title ? apod.title : apod.msg}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img className="w-100" src={apod.url}></img>
+        {visual}
         <h2>{apod.date}</h2>
        {apod.explanation}
       </Modal.Body>

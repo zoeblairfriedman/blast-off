@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
 export default function DateForm(props){
 
@@ -13,7 +15,7 @@ export default function DateForm(props){
   }
 
   return (  
-   
+   <>
     <form onSubmit={(e) => handleSubmit(e)}>
       <label for="date">
         Choose a date: 
@@ -21,6 +23,6 @@ export default function DateForm(props){
       </label>
       <input type="submit" value="Go!" />
     </form>
-  
+  </>
   )
 }

@@ -8,19 +8,21 @@ import Container from 'react-bootstrap/Container'
 
 export default function ChooseDate(){
 
+
   const [date, setDate] = useState("");
+
   function handleSubmit(newDate){
     setDate(newDate)
   }
 
 
-
+  
   return (
   <Container>
       <Row>
         <DateForm date={date} onSubmit={handleSubmit}/>
       </Row>
-      { date ? <DateModal date={date}/> : null}
+      { date ? <DateModal key={date} date={date} /> : null}
   </Container>
   )
 }
