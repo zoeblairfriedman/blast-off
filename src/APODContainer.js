@@ -17,7 +17,7 @@ export default function CardContainer(){
 
   return (
   <Container>
-    <Row xs={1} md={2}>
+    <Row className="justify-content-center">
       {state.map((asset, i) => <APOD key={i} asset={asset}/>)}
     </Row>
   </Container>
