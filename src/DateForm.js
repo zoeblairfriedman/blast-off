@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Modal from 'react-bootstrap/Modal'
+import Row from 'react-bootstrap/Row'
+import Form from 'react-bootstrap/Form'
+import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
+
 
 export default function DateForm(props){
 
@@ -15,14 +18,19 @@ export default function DateForm(props){
   }
 
   return (  
-   <>
-    <form onSubmit={(e) => handleSubmit(e)}>
-      <label for="date">
-        Choose a date: 
-        <input type="date" name="date" onChange={handleChange} />
-      </label>
-      <input type="submit" value="Go!" />
-    </form>
-  </>
+  <Form onSubmit={(e) => handleSubmit(e)} className="border p-2">
+   <Row className="align-items-center"> 
+      <Col></Col>
+      <Col>
+      <Form.Label htmlFor="inlineFormInput" for="date">
+        Date
+      </Form.Label>
+      <Form.Control type="date" name="date" className="mb-2 d-inline" onChange={handleChange} id="inlineFormInput"/>
+      <Button type="submit" xs="auto" className="d-inline mx-1"> Go! </Button>
+      </Col>
+    <Col></Col>
+    </Row>
+   </Form>
+  
   )
 }
