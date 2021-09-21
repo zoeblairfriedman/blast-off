@@ -23,9 +23,9 @@ export default function DateModal(props){
   if (apod.code === 400) {
     visual = <iframe src='https://gfycat.com/ifr/FixedIndolentIzuthrush' width="480" height="196" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
   } else if (apod.media_type !== "image"){
-    visual = <iframe src={apod.url} className="w-100" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    visual = <iframe src={apod.url} className="w-100 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   } else {
-    visual = <img className="w-100" src={apod.url}></img>
+    visual = <img className="w-100 rounded" src={apod.url}></img>
   }
 
 
@@ -43,7 +43,7 @@ export default function DateModal(props){
       </Modal.Header>
       <Modal.Body className="bg-primary">
         {visual}
-        <h2 className="text-success">{apod.date}</h2>
+        <h2 className="text-success mt-3">{apod.date}</h2>
        <p className="text-light">{apod.explanation}</p>
       </Modal.Body>
       <Modal.Footer className="bg-success">
