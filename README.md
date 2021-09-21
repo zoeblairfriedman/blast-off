@@ -12,7 +12,7 @@ This appliation was created to satisfy the requirements of Shopify's Front End D
 ## Tech/Frameworks
 
 Built with:
--R eact(https://reactjs.org/)
+- React(https://reactjs.org/)
 - Bootstrap for React(https://react-bootstrap.netlify.app/)
 
 ## API Reference:
