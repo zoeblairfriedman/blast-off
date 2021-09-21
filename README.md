@@ -3,7 +3,7 @@
 This is a React application built to make calls to NASA's "Astronomy Picture of the Day" API, automatically generating 10 random images. It also allows users to see what the "Picture of the Day" was for any date between the fruition of the program in 1995 and today. Users may also "like" and "unlike" the randomly generating images. **This application is currently frontend only and these "likes" do not persist in any database.**
 
 ## Preview
-![Screenshot main](public/screenshot1.png)
+![Screenshot main](public/screenshot.png)
 
 ## Purpose
 
