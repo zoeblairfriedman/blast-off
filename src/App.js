@@ -3,14 +3,15 @@ import './App.css';
 import RandomContainer from './RandomContainer';
 import Banner from './Banner'
 import ChooseDate from './ChooseDate'
+import Row from 'react-bootstrap/Row'
 
 function App() {
   return (
-    <div>
+    <Row>
       <Banner/>
       <ChooseDate/>
       <RandomContainer/>
-    </div>
+    </Row>
    
   );
 }

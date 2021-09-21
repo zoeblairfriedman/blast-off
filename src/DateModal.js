@@ -38,15 +38,15 @@ export default function DateModal(props){
       backdrop="static"
       keyboard={false}
     >
-      <Modal.Header closeButton>
+      <Modal.Header closeButton className="bg-success text-white">
         <Modal.Title>{apod.title ? apod.title : apod.msg}</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="bg-primary">
         {visual}
-        <h2>{apod.date}</h2>
-       {apod.explanation}
+        <h2 className="text-success">{apod.date}</h2>
+       <p className="text-light">{apod.explanation}</p>
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer className="bg-success">
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
