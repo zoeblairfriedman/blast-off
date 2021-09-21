@@ -18,19 +18,21 @@ export default function DateForm(props){
   }
 
   return (  
-  <Form onSubmit={(e) => handleSubmit(e)} className="border p-2">
-   <Row className="align-items-center"> 
+
+   <Row className="align-items-center mb-3"> 
       <Col></Col>
       <Col>
-      <Form.Label htmlFor="inlineFormInput" for="date">
-        Date
-      </Form.Label>
-      <Form.Control type="date" name="date" className="mb-2 d-inline" onChange={handleChange} id="inlineFormInput"/>
-      <Button type="submit" xs="auto" className="d-inline mx-1"> Go! </Button>
+        <Form onSubmit={(e) => handleSubmit(e)} className="border p-2 m-0 text-white">
+        <Form.Label htmlFor="inlineFormInput" for="date">
+          Date
+        </Form.Label>
+        <Form.Control type="date" name="date" className="mb-2 d-inline bg-secondary" onChange={handleChange} id="inlineFormInput"/>
+        <Button type="submit" xs="auto" className="d-inline mx-1"> Go! </Button>
+        </Form>
       </Col>
     <Col></Col>
     </Row>
-   </Form>
+  
   
   )
 }

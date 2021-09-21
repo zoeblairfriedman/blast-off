@@ -21,7 +21,7 @@ export default function DateModal(props){
   
   let visual;
   if (apod.code === 400) {
-    visual = <img className="w-100" src='./tinyrocket.png'></img>
+    visual = <iframe src='https://gfycat.com/ifr/FixedIndolentIzuthrush' width="480" height="196" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
   } else if (apod.media_type !== "image"){
     visual = <iframe src={apod.url} className="w-100" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   } else {
