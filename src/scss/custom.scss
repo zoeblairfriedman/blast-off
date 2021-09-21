@@ -2,9 +2,9 @@
 // $primary: rgb(6, 10, 255);
 // $success: rgb(255, 6, 193, 0.712);
 // $primary-text: rgb(14, 1, 24);
-
 $theme-colors: (
     "primary": #e022b3,
+    // "secondary": #aec865,
     "danger": #5ac9f7,
     "warning": #ffd54f,
     "secondary": #c0ca33,
@@ -12,4 +12,4 @@ $theme-colors: (
 );
 
 
-@import "~bootstrap/scss/bootstrap.scss";
+@import "../bootstrap/scss/bootstrap.scss";
