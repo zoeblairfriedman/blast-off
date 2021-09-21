@@ -12,18 +12,18 @@ This appliation was created to satisfy the requirements of Shopify's Front End D
 ## Tech/Frameworks
 
 Built with:
-React(https://reactjs.org/)
-Bootstrap for React(https://react-bootstrap.netlify.app/)
+-R eact(https://reactjs.org/)
+- Bootstrap for React(https://react-bootstrap.netlify.app/)
 
 ## API Reference:
 NASA's "Astronomy Picture of the Day API"(https://github.com/nasa/apod-api)
 
 ## Installation:
-Fork and clone repo
-Install all necessary packages by running 'npm install'
-Start the server by running 'npm start'
+- Fork and clone repo
+- Install all necessary packages by running 'npm install'
+- Start the server by running 'npm start'
 
 ## Usage:
-Browse images
-"Like" and "Unlike" images by clicking the hearts
-Search for previously featured images or videos through the date form
+- Browse images
+- "Like" and "Unlike" images by clicking the hearts
+- Search for previously featured images or videos through the date form
