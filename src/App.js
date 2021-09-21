@@ -10,7 +10,7 @@ function App() {
   return (
       <>
       <Header/>
-      <Row >
+      <Row>
         <ChooseDate/>
         <RandomContainer/>
       </Row>

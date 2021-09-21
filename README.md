@@ -29,8 +29,3 @@ NASA's "Astronomy Picture of the Day API"(https://github.com/nasa/apod-api)
 - Search for previously featured images or videos through the date form
 
 
-
-// $body-bg: rgb(14, 1, 24);
-// $primary: rgb(6, 10, 255);
-// $success: rgb(255, 6, 193, 0.712);
-// $primary-text: rgb(14, 1, 24);
