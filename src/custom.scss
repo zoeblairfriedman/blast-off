@@ -1,6 +1,15 @@
 // $body-bg: rgb(14, 1, 24);
 // $primary: rgb(6, 10, 255);
-// $success: rgba(255, 6, 193, 0.712);
+// $success: rgb(255, 6, 193, 0.712);
 // $primary-text: rgb(14, 1, 24);
+
+$theme-colors: (
+    "primary": #e022b3,
+    "danger": #5ac9f7,
+    "warning": #ffd54f,
+    "secondary": #c0ca33,
+    "info": #7986cc
+);
+
 
 @import "~bootstrap/scss/bootstrap.scss";
