@@ -7,7 +7,7 @@ This is a React application built to make calls to NASA's "Astronomy Picture of 
 
 ## Purpose
 
-This appliation was created to satisfy the requirements of Shopify's Front End Developer Intern Challenge for the Winter 2022
+This single page application was created to satisfy the requirements of Shopify's Front End Developer Intern Challenge for the Winter 2022
 
 ## Tech/Frameworks
 
